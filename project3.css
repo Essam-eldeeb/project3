@@ -1,0 +1,466 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "PT Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+html{
+  /* background-color: rgb(22, 21, 21); */
+  scroll-behavior: smooth;
+  /* margin-left: 10px; */
+  /* height: 4000px; */
+}
+
+.mynav{
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  background: linear-gradient(to left, black, #555, #ddd);
+}
+.mynav button{
+  background-color: black;
+  color: rgb(255, 250, 250);
+  /* border: rgb(138, 27, 27) solid 2px; */
+  border-radius: 20px;
+
+}
+.word {
+  color: red !important;  
+  margin-left: 20px;
+  font-family: "PT Sans", sans-serif;
+  /* font-size: 45px; */
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+     transform:scale(1.5);
+
+
+   }
+.word:hover {
+  transform: translate(20px)  scale(1.6);
+
+  transition: all 1s;
+}
+@keyframes move {
+  
+  20% {
+      transform: translate(1500px)  scale(1.5);
+      opacity: 1;
+      letter-spacing: 50px;
+    }
+    40%{
+      transform: translate(1000px)  scale(1.5);
+
+      letter-spacing: 30px;
+
+    }
+  60%{    
+    transform: translate(500px)  scale(1.5);
+
+        letter-spacing: 20px;
+    }
+  80% {
+      transform: translate(300px)   scale(1.5);
+      letter-spacing: 15px;
+  }
+  100% {
+      transform: translate(0px)   scale(1.5);
+      opacity: 1;
+      letter-spacing: 0px;
+  }
+}
+/* end nav bar */
+/* ========================================================== */
+
+.img-bg{
+   
+    background-image: url(./photo/space\ image.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+
+
+}
+.welcom h1 {
+  width: 100px;
+  height: 50px;
+  color: red;
+font-size: 100px;
+/* margin-bottom: 400px;
+margin-right: 300px; */
+transform: translate(-148px, -131px);
+
+animation-name: letter ;
+animation-duration: 3s;
+animation-iteration-count: 1;
+
+
+
+}
+@keyframes letter {
+  
+  20% {
+      /* transform: translate(1000px)  ; */
+      letter-spacing: 100px;
+    }
+    40%{
+      /* transform: translate(800px)  ; */
+      
+
+      letter-spacing: 60px;
+
+    }
+  60%{    
+    /* transform: translate(500px)  ; */
+
+        letter-spacing: 30px;
+    }
+  80% {
+      /* transform: translate(300px)   ; */
+      letter-spacing: 15px;    
+
+  }
+  100% {
+      /* transform: translate(0px)   ; */
+      opacity: 1;
+      letter-spacing: 0px;
+
+  }
+}
+
+/* ========================================================================= */
+
+/* ===========about===================== */
+
+.img-bg2{
+  background-image: url(./photo/524540-Taenaron-3D-Moon-clouds-digital_art-748x421.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+
+    
+
+
+}
+
+#about{
+  padding: 50px;
+  text-align: center;
+  background-image: url(./photo/stone1.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height:auto;
+
+}
+#about .about-header{
+  margin-top:30px ;
+  width: 30%;
+  margin: auto;
+  border-bottom: 5px solid white;
+  border-radius: 20px;
+
+}
+#about .about-header h1{
+  color: white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  border-radius: 20px;
+  font-family:"Verdana, Geneva, Tahoma, sans-serif";
+
+}
+#about .aboutinfo{
+  padding: 60px 30px;
+  color: #ddd;
+}
+
+/* =========================================================== section about end */
+
+#profile{
+  padding: 50px;
+  text-align: center;
+  height:auto;
+  background: linear-gradient(to left, #000 70%, rgb(47, 6, 63));
+  color: white;
+
+}
+#profile .profileheader{
+  width: 30%;
+  margin: auto;
+}
+#profile .profileheader h1{
+  position: relative;
+}
+
+
+#profile .profileheader h1::after{
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 4px;
+  right: 0px;
+  background-color: white;
+ top: 50%;
+
+
+
+  
+}
+
+
+#profile .profileheader h1::before{
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 4px;
+  left: 0px;
+  background-color: white;
+ top: 50%;
+
+
+
+  
+}
+
+
+#product{
+  padding: 50px;
+  text-align: center;
+  background-image: url(./photo/naveen-prajapat-eQu4HfK53lk-unsplash.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height:auto;
+
+}
+#product .product-header{
+  margin-top:30px ;
+  width: 30%;
+  margin: auto;
+  border-bottom: 5px solid white;
+  border-radius: 20px;
+  margin-bottom: 30px;
+
+}
+#product .product-header h1{
+  color: white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  border-radius: 20px;
+  font-family:"Verdana, Geneva, Tahoma, sans-serif";
+
+}
+.card{
+
+      background-color: #555;
+      margin-top: 10px;
+}
+.card-img-top{
+  
+    height: 300px;
+
+}
+/* ===============footer============ */
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+@media ( max-width:600px  ) {
+
+  #about .about-header h1{ 
+
+    font-size: 25px;
+  }
+  #about .about-header{
+    width: 80%;
+  }
+  #profile .profileheader h1{
+
+    position: relative;
+    font-size: 25px;
+  }
+  #profile .profileheader{
+    width: 80%;
+    margin: auto;
+  }
+  
+  .write{
+    font-size:30px;
+  }
+  #product .product-header h1{
+
+    position: relative;
+    font-size: 25px;
+  }
+
+
+
+}
